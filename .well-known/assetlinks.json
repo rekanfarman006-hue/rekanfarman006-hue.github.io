@@ -1,1 +1,8 @@
-
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.klil.app",
+        "sha256_cert_fingerprints": ["BB:DA:E9:42:16:44:5E:82:80:FE:36:34:AD:A0:13:1E:3F:6F:9B:BC:BB:65:2C:62:C2:E1:2F:0B:EF:0D:9B:CE"]
+      }
+    }]
