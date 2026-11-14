@@ -1,8 +1,14 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "com.klil.app",
-        "sha256_cert_fingerprints": ["BB:DA:E9:42:16:44:5E:82:80:FE:36:34:AD:A0:13:1E:3F:6F:9B:BC:BB:65:2C:62:C2:E1:2F:0B:EF:0D:9B:CE"]
-      }
-    }]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.klil.app",
+      "sha256_cert_fingerprints": [
+        "1E:A8:81:AE:9A:3E:4F:8A:30:8F:F9:A5:87:86:8F:80:DB:5A:70:F3:25:78:CA:FA:05:33:64:33:AD:B2:E0:A4",
+        "D0:66:CD:8E:C3:33:38:A3:12:0A:78:64:F8:2A:D0:A8:5F:B9:0F:62:02:41:66:3C:E1:E3:99:FC:D5:78:D3:DD",
+        "45:9E:1B:AB:C6:E3:B3:48:66:D5:D8:F4:3F:56:A4:98:9A:60:EF:6E:61:36:AF:2E:DF:79:5E:BE:66:10:D0:7F"
+      ]
+    }
+  }
+]
