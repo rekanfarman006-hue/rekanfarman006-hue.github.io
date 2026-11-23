@@ -1807,7 +1807,7 @@ function viewChapters(){
 function viewChapter(c){
   const secs=SECK.filter(k=>+k.split('.')[0]===c);const L=QS.filter(q=>chOf(q)===c);
   return header('بەندی '+c,CH[c],true)+'<div class="wrap"><div class="stack" style="margin-top:16px">'+
-   '<button class="btn" data-act="runch" data-c="'+c+'">هەموو پرسیارەکانی ئەم بەندە ('+L.length+')</button>'+
+   '<button class="btn" data-act="runch" data-c="'+c+'">'+(CUR==='eng'&&c===8?'هەموو ئیپسۆدەکان پێکەوە':'هەموو پرسیارەکانی ئەم بەندە')+' ('+L.length+')</button>'+
    secs.map(k=>{const S=QS.filter(q=>q.s===k),s=statsFor(S);return '<button class="row" data-act="runsec" data-s="'+k+'"'+(S.length?'':' disabled style="opacity:.55"')+'><div class="ix num" style="font-size:13px">'+k+'</div><div class="tx"><b>'+SEC[k][0]+'</b><span>'+(S.length?'<span class="num">'+S.length+'</span> پرسیار':'هیچ پرسیارێک نەهاتووە')+(pgOf(k)?' · کتێب لاپەڕە <span class="num">'+SEC[k][1]+'</span>':'')+(s.seen?' · ڕاست <span class="num '+pctCls(s.pct)+'">'+s.pct+'%</span>':'')+'</span></div></button>'}).join('')+'</div></div>';
 }
 function viewExams(){
